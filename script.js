@@ -1,4 +1,4 @@
-// Function that returns a randomly chosen choice.
+// getComputerChoice() - randomly returns a valid choice.
 function getComputerChoice() {
   const rand = Math.floor(Math.random() * 3);
   // console.log(rand);
@@ -6,7 +6,7 @@ function getComputerChoice() {
   return choices[rand];
 }
 
-// Function that returns the choice entered by the user in the input prompt. If the user enters an invalid input, they are prompted to renter until the input matches one of the valid options. If the input is not in lowercase, it is still accepted, but the function converts it to lowercase while returning.
+// Return the choice entered by the user. If invalid, user is asked to re-enter.
 
 function getHumanChoice() {
   const choices = ["rock", "paper", "scissors"];
@@ -47,7 +47,7 @@ function playGame() {
       computerScore++;
     }
   }
-  // Play the game 5 times.
+
   for (let i = 1; i <= 5; i++) {
     alert(`Round ${i}. Get Ready!`);
     const humanSelection = getHumanChoice();

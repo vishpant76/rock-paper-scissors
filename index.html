@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors</title>
   </head>
   <body>
+    <div class="results-container">
+      <p class="selections"></p>
+      <!-- <p class="round-result"></p> -->
+    </div>
     <div class="btn-options">
       <button class="btn rock">Rock</button>
       <button class="btn paper">Paper</button>
       <button class="btn scissors">Scissors</button>
     </div>
+    <div class="running-scores"></div>
+    <div class="final-result"></div>
   </body>
 </html>

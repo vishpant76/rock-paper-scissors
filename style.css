@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +8,17 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   /* margin: 0; */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
   /* background-color: #f5f5dc; */
   background-color: #121212;
   color: #e0e0e0;
+  gap: 40px;
 }
 
 .btn-options {
@@ -33,6 +37,7 @@ body {
   background-color: #1e88e5;
   /* color: white; */
   color: #e0e0e0;
+  font-size: 16px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -42,4 +47,27 @@ body {
 .btn:hover {
   /* background-color: #0056b3; */
   background-color: #1565c0;
+}
+
+/* .running-scores {
+  display: flex;
+} */
+
+/* .results-container {
+  display: flex;
+} */
+
+.reset-btn {
+  width: 70px;
+  height: 30px;
+  background-color: #32cd32;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #4ae64a;
 }
